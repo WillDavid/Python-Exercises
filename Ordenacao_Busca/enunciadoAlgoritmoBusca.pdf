@@ -1,0 +1,3 @@
+Exercício 1
+Escreva um programa que leia uma sequência com N números reais e imprime a sequência eliminando os elementos repetidos.
+*não utilizar filtros ou estruturas que automatizem o trabalho de busca no python. Reforçando utilizar apenas as instruções (for com range e if)
