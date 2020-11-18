@@ -1,0 +1,11 @@
+Exercício 2
+
+Implemente um algoritmo de busca (em um conjunto ordenado) que seja mais eficiente que a busca sequencial.
+
+Condições para o segundo exercício:
+
+Cada aluno solicita do professor:
+
+1) o método de ordenação que este deve usar na questão.
+
+2) técnica de implementação. (recursiva ou iterativa)
