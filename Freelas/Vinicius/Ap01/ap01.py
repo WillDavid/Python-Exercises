@@ -29,13 +29,57 @@ def fatorial(i):
 def quadrado(i):
   return i**2
 
+# Main
 qtdNumeros = int(input())
 listaNumeros = []
+totPar = 0
+totImpar = 0
+totPrimo = 0
+soma = 0
+somaQuadrados = 0
+maiorNumero = 0
+menorNumero = 10000000000
+
 
 for i in range(qtdNumeros):
   listaNumeros.append(int(input()))
 
 for i in listaNumeros:
-  if(primo(i) == 1):
-    print("Primo")
-  print(fatorial(i))
+  result = ""
+  if parImpar(i) == 1:
+    result += "Par"
+    totPar += 1
+  else:
+    result += "Impar"
+    totImpar +=1
+  if primo(i) == 1:
+    result += " Primo"
+    totPrimo += 1
+  result += " " + str(quadrado(i))
+  result += " " + str(fatorial(i))
+
+  soma += i
+  somaQuadrados += quadrado(i)
+
+  if i > maiorNumero:
+    maiorNumero = i
+  if i < menorNumero:
+    menorNumero = i
+
+  #Parte 2
+
+  print(result)
+
+mediaAri = soma/qtdNumeros
+
+print(totPar)
+print(totImpar)
+print(totPrimo)
+print("{:.2f}".format(mediaAri))
+print(somaQuadrados)
+print(maiorNumero)
+print(menorNumero)
+  
+
+  
+
